@@ -1,0 +1,27 @@
+{
+  "name": "mern-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd clients && npm install",
+    "start": "babel-watch index.js",
+    "start-client": "npm start --prefix ./clients",
+    "start-server": "babel-watch index.js",
+    "dev": "npm-run-all -p start-server start-client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix clients && npm run build --prefix clients"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7",
+    "npm-run-all": "^4.1.3"
+  }
+}

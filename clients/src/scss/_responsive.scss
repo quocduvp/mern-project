@@ -1,0 +1,26 @@
+//sm
+@media screen and(max-width: 35.5em){
+
+}
+//md
+@media screen and(max-width: 48em){
+    #bg{
+        height: auto;
+        padding-top: 10rem;
+        padding-bottom: calc(10rem - 56px);
+        background-image: url('../images/background.jpg');
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+//lg
+@media screen and(max-width: 64em){
+
+}
+//xl
+@media screen and(max-width: 80em){
+
+}
